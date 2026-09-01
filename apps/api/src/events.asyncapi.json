@@ -1,0 +1,45 @@
+{
+  "asyncapi": "3.0.0",
+  "info": {
+    "title": "Beispielshop Backoffice Events",
+    "version": "1.0.0"
+  },
+  "channels": {
+    "orderCreated": {
+      "address": "shop.order.created",
+      "messages": {
+        "orderCreated": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "orderId",
+              "total"
+            ],
+            "properties": {
+              "orderId": {
+                "type": "string"
+              },
+              "total": {
+                "type": "number"
+              },
+              "currency": {
+                "type": "string",
+                "enum": [
+                  "EUR"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "operations": {
+    "onOrderCreated": {
+      "action": "receive",
+      "channel": {
+        "$ref": "#/channels/orderCreated"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+packages:
+  - apps/*
+  - packages/*
+
+minimumReleaseAge: 4320        # Minuten, 72 Stunden (Standard seit pnpm 11: 1440)
+minimumReleaseAgeExclude:
+  - "@beispielshop/*"          # eigene Pakete ohne Karenzzeit
+allowBuilds:
+  '@scarf/scarf': false
+  esbuild: true                # einziges Paket mit erlaubten Install-Skripten
+injectWorkspacePackages: true
+overrides:
+  postcss: ">=8.5.23"
