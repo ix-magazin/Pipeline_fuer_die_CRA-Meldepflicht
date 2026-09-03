@@ -1,4 +1,11 @@
-# CRA-Pipeline
+# Pipeline für die CRA-Meldepflicht
+Repository zum [Praxis-Artikel](https://www.heise.de/select/ix/2026/10/2615611580984043675) von [Cornelius May](https://www.linkedin.com/in/cornelius-may-391153208/), erschienen in iX [10/2026](https://www.heise.de/select/ix/2026/10) und auf [heise online](heise.de).
+
+## iX-tract
+- Eine automatisierte Build-Pipeline mit SBOM, Sigstore-Signaturen und SBOM-Bestandsplattform schafft die nötige Datenbasis für die Meldepflicht, die der Cyber Resilience Act verlangt, und nimmt die Produktpflichten vorweg, die ab Ende 2027 gelten.
+- Karenzzeiten für neue npm-Pakete und Allowlists für Install-Skripte reduzieren das Risiko, kompromittierte Pakete ins Produkt zu holen.
+- Dependency-Track, der Abgleich mit KEV- und EUVD-Katalogen sowie ein geprobter Meldeprozess machen die Meldung ausgenutzter Schwachstellen in 24 Stunden möglich. Tooling, VEX-Adoption und die ENISA-Meldeplattform hinken jedoch hinterher.
+- Der technische Aufbau der Pipeline ist in wenigen Tagen erledigt. Das eigentliche Projekt sind Bestandsführung, eingespielter Meldeprozess und ein Probelauf vor dem Stichtag.
 
 ## Dateien aus dem Artikel
 
